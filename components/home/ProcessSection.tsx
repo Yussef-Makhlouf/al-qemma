@@ -98,7 +98,7 @@ export function ProcessSection() {
                 كيف نعمل
               </div>
               <h2 id="process-title" className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0D1B35] mb-6">
-                ٥ خطوات لنتيجة <span className="text-primary">مضمونة</span>
+                4 خطوات لنتيجة <span className="text-primary">مضمونة</span>
               </h2>
               <p className="text-[#4A5568] text-base sm:text-lg font-light leading-relaxed mb-8">
                 من أول تواصل حتى ضمان الرضا — عملية واضحة وشفافة تضمن لك أعلى جودة في كل مرة.
