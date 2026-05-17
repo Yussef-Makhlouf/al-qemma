@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Droplet } from 'lucide-react';
+import Image from 'next/image';
 
 export function SplashScreen() {
   const [isVisible, setIsVisible] = useState(true);
@@ -35,32 +36,21 @@ export function SplashScreen() {
               </motion.div>
               
               <div className="relative mt-8">
-                 {/* Draw Mountain/Peak Icon Placeholder with SVG */}
-                 <svg width="100" height="100" viewBox="0 0 100 100" className="stroke-gold fill-transparent" strokeWidth="3">
-                    <motion.path 
-                       d="M10,90 L50,20 L90,90 Z"
-                       initial={{ pathLength: 0 }}
-                       animate={{ pathLength: 1 }}
-                       transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
+                 <motion.div
+                    initial={{ scale: 0.9, opacity: 0, filter: "blur(10px)" }}
+                    animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
+                    transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                 >
+                    <Image 
+                      src="/logo.png" 
+                      alt="القمة الفريدة" 
+                      width={220} 
+                      height={90} 
+                      className="object-contain "
+                      priority
                     />
-                    <motion.path 
-                       d="M30,55 L50,30 L70,55"
-                       initial={{ pathLength: 0 }}
-                       animate={{ pathLength: 1 }}
-                       transition={{ duration: 0.5, delay: 0.5, ease: "easeInOut" }}
-                       className="stroke-accent"
-                    />
-                 </svg>
+                 </motion.div>
               </div>
-
-              <motion.h1 
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 1 }}
-                className="text-3xl font-bold text-white mt-4"
-              >
-                القمة
-              </motion.h1>
            </div>
         </motion.div>
       )}

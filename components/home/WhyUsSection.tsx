@@ -43,7 +43,7 @@ const reasons = [
     desc: 'إجراءات عمل موثقة وتقارير جودة تفصيلية تُقدَّم لك بعد كل مهمة من مشرف الجودة.',
     stat: 'تقرير جودة',
     color: 'bg-accent',
-    image: '/spring-cleaning.png',
+    image: '/clean-villa.png',
   },
   {
     id: 5,
@@ -105,11 +105,11 @@ export function WhyUsSection() {
             // Row 1: 2 cols, 1 col
             // Row 2: 1 col, 2 cols
             // Row 3: 2 cols, 1 col
-            const spanClass = 
+            const spanClass =
               idx === 0 ? "md:col-span-2 lg:col-span-2" :
-              idx === 3 ? "md:col-span-2 lg:col-span-2" :
-              idx === 4 ? "md:col-span-2 lg:col-span-2" :
-              "md:col-span-1";
+                idx === 3 ? "md:col-span-2 lg:col-span-2" :
+                  idx === 4 ? "md:col-span-2 lg:col-span-2" :
+                    "md:col-span-1";
 
             return (
               <motion.div
@@ -133,10 +133,10 @@ export function WhyUsSection() {
 
                 {/* Content Container */}
                 <div className="absolute inset-0 p-6 sm:p-8 flex flex-col justify-end">
-                  
+
                   {/* Top Right Number */}
                   <div className="absolute top-6 right-6">
-                     <span className="text-white/30 font-mono font-bold text-4xl">
+                    <span className="text-white/30 font-mono font-bold text-4xl">
                       {item.number}
                     </span>
                   </div>
@@ -151,11 +151,11 @@ export function WhyUsSection() {
                         <span className="text-xs font-bold text-white">{item.stat}</span>
                       </div>
                     </div>
-                    
+
                     <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 leading-tight">
                       {item.title}
                     </h3>
-                    
+
                     {/* Description (Always visible on mobile, fades in on hover on desktop) */}
                     <p className="text-white/90 text-sm sm:text-base leading-relaxed opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 md:delay-100 line-clamp-3 md:line-clamp-2">
                       {item.desc}
