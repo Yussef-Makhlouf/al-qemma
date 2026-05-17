@@ -13,7 +13,7 @@ export function ArticlesSection() {
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] -translate-y-1/3 translate-x-1/3" aria-hidden="true" />
       <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-accent/5 rounded-full blur-[150px] translate-y-1/3 -translate-x-1/3" aria-hidden="true" />
       {/* Soft Grid Background */}
-      <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-[0.02]" aria-hidden="true" />
+      <div className="absolute inset-0 opacity-[0.02]" aria-hidden="true" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
         
@@ -175,7 +175,7 @@ export function ArticlesSection() {
             {/* Quick Contact / CTA Card */}
             <div className="rounded-[2rem] bg-gradient-to-br from-[#0D1B35] via-[#1a365d] to-[#0D1B35] p-8 text-white relative overflow-hidden group shadow-xl">
               {/* Decorative elements */}
-              <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay"></div>
+              <div className="absolute inset-0 opacity-10 mix-blend-overlay"></div>
               <div className="absolute -top-20 -right-20 w-48 h-48 bg-primary/40 rounded-full blur-[50px] group-hover:bg-primary/50 group-hover:scale-110 transition-all duration-700"></div>
               <div className="absolute -bottom-20 -left-20 w-48 h-48 bg-accent/30 rounded-full blur-[40px] group-hover:bg-accent/40 group-hover:scale-110 transition-all duration-700"></div>
               
