@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Home as HomeIcon, Building2, HardHat, Sofa, Sparkles, Droplets, Wind, FlameKindling, ShieldCheck, Layers, Eye, ArrowRight, CheckCircle2, Warehouse } from 'lucide-react';
+import React from 'react';
 import { ContactCTA } from '@/components/home/ContactCTA';
+import { PromotionalBanner, promoBanners } from '@/components/ui/PromotionalBanner';
 
 export const metadata: Metadata = {
   title: 'خدمات شركة القمة للتنظيف الاحترافية في السعودية',
@@ -351,72 +353,79 @@ export default function ServicesPage() {
       {/* Services List - Alternating Layout */}
       <div className="bg-white">
         {services.map((svc, idx) => (
-          <section key={svc.id} id={svc.id} className={`py-16 sm:py-24 ${svc.bgClass} relative overflow-hidden`}>
-            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
-              <div className={`flex flex-col ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 lg:gap-20 items-center`}>
+          <React.Fragment key={svc.id}>
+            <section id={svc.id} className={`py-16 sm:py-24 ${svc.bgClass} relative overflow-hidden`}>
+              <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+                <div className={`flex flex-col ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 lg:gap-20 items-center`}>
 
-                {/* Abstract Icon Block */}
-                <div className="w-full lg:w-5/12 relative h-[350px] sm:h-[450px] shrink-0">
-                  <div className="absolute inset-0 bg-white rounded-[2rem] sm:rounded-[3rem] overflow-hidden group border border-[#E8EEF9] flex items-center justify-center relative shadow-xl shadow-primary/5">
-                    <div className={`absolute inset-0 bg-gradient-to-br ${svc.color} pointer-events-none opacity-50 group-hover:opacity-100 transition-opacity duration-700`} />
-                    <div className="absolute inset-0 dot-pattern opacity-30" />
-                    <Image
-                      src={svc.image}
-                      alt={svc.imageAlt}
-                      width={48}
-                      height={48}
-                      className="w-full h-full object-contain object-center"
-                      priority
-                    />
-                    {/* Inner small icon for clarity */}
-                    <div className={`absolute bottom-8 right-8 w-16 h-16 rounded-2xl bg-white shadow-lg flex items-center justify-center border border-[#E8EEF9]`}>
-                      <svc.icon className={`w-8 h-8 ${svc.iconColor}`} />
+                  {/* Abstract Icon Block */}
+                  <div className="w-full lg:w-5/12 relative h-[350px] sm:h-[450px] shrink-0">
+                    <div className="absolute inset-0 bg-white rounded-[2rem] sm:rounded-[3rem] overflow-hidden group border border-[#E8EEF9] flex items-center justify-center relative shadow-xl shadow-primary/5">
+                      <div className={`absolute inset-0 bg-gradient-to-br ${svc.color} pointer-events-none opacity-50 group-hover:opacity-100 transition-opacity duration-700`} />
+                      <div className="absolute inset-0 dot-pattern opacity-30" />
+                      <Image
+                        src={svc.image}
+                        alt={svc.imageAlt}
+                        width={48}
+                        height={48}
+                        className="w-full h-full object-contain object-center"
+                        priority
+                      />
+                      {/* Inner small icon for clarity */}
+                      <div className={`absolute bottom-8 right-8 w-16 h-16 rounded-2xl bg-white shadow-lg flex items-center justify-center border border-[#E8EEF9]`}>
+                        <svc.icon className={`w-8 h-8 ${svc.iconColor}`} />
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* Content Slice */}
-                <div className="w-full lg:w-7/12 flex flex-col justify-center">
-                  <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-                    <span className={`bg-white border border-[#E8EEF9] shadow-sm text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full ${svc.iconColor}`}>
-                      {svc.tag}
-                    </span>
+                  {/* Content Slice */}
+                  <div className="w-full lg:w-7/12 flex flex-col justify-center">
+                    <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                      <span className={`bg-white border border-[#E8EEF9] shadow-sm text-xs sm:text-sm font-bold px-4 py-1.5 rounded-full ${svc.iconColor}`}>
+                        {svc.tag}
+                      </span>
+                    </div>
+
+                    <h2 className="text-3xl sm:text-4xl font-bold text-[#0D1B35] mb-6 leading-tight">
+                      {svc.title}
+                    </h2>
+
+                    <p className="text-[#4A5568] leading-relaxed text-base sm:text-lg mb-8 font-light text-justify">
+                      {svc.desc}
+                    </p>
+
+                    <div className="mb-10 bg-white border border-[#E8EEF9] rounded-2xl p-6 sm:p-8 shadow-sm">
+                      <h4 className="text-[#0D1B35] font-bold mb-4 sm:mb-5 text-base sm:text-lg flex items-center gap-2">
+                        <Sparkles className="w-5 h-5 text-gold" />
+                        هذه الخدمة تشمل الآتي:
+                      </h4>
+                      <ul className="grid sm:grid-cols-2 gap-4">
+                        {svc.includes.map((inc, i) => (
+                          <li key={i} className="flex items-start gap-3">
+                            <CheckCircle2 className={`w-5 h-5 shrink-0 mt-0.5 ${svc.iconColor}`} aria-hidden="true" />
+                            <span className="text-[#4A5568] text-sm sm:text-base font-medium">{inc}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <a
+                      href="tel:+966579796006"
+                      aria-label={`احجز ${svc.title}`}
+                      className="btn-primary w-full sm:w-fit text-center"
+                    >
+                      احجز هذه الخدمة الآن
+                    </a>
                   </div>
-
-                  <h2 className="text-3xl sm:text-4xl font-bold text-[#0D1B35] mb-6 leading-tight">
-                    {svc.title}
-                  </h2>
-
-                  <p className="text-[#4A5568] leading-relaxed text-base sm:text-lg mb-8 font-light text-justify">
-                    {svc.desc}
-                  </p>
-
-                  <div className="mb-10 bg-white border border-[#E8EEF9] rounded-2xl p-6 sm:p-8 shadow-sm">
-                    <h4 className="text-[#0D1B35] font-bold mb-4 sm:mb-5 text-base sm:text-lg flex items-center gap-2">
-                      <Sparkles className="w-5 h-5 text-gold" />
-                      هذه الخدمة تشمل الآتي:
-                    </h4>
-                    <ul className="grid sm:grid-cols-2 gap-4">
-                      {svc.includes.map((inc, i) => (
-                        <li key={i} className="flex items-start gap-3">
-                          <CheckCircle2 className={`w-5 h-5 shrink-0 mt-0.5 ${svc.iconColor}`} aria-hidden="true" />
-                          <span className="text-[#4A5568] text-sm sm:text-base font-medium">{inc}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <a
-                    href="tel:+966579796006"
-                    aria-label={`احجز ${svc.title}`}
-                    className="btn-primary w-full sm:w-fit text-center"
-                  >
-                    احجز هذه الخدمة الآن
-                  </a>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+            
+            {/* Inject a promotional banner every 4 services */}
+            {(idx + 1) % 4 === 0 && ((idx + 1) / 4) - 1 < promoBanners.length && (
+              <PromotionalBanner {...promoBanners[((idx + 1) / 4) - 1]} />
+            )}
+          </React.Fragment>
         ))}
       </div>
 

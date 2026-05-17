@@ -90,7 +90,7 @@ export function ContactCTA() {
 
                 {/* Guarantee note */}
                 <div className="text-center text-white/50 text-xs font-light">
-                  ✓ معاينة مجانية &nbsp;·&nbsp; ✓ عرض سعر فوري &nbsp;·&nbsp; ✓ ضمان ٤٨ ساعة
+                  ✓ معاينة مجانية &nbsp;·&nbsp; ✓ عرض سعر فوري &nbsp;·&nbsp; 
                 </div>
               </div>
             </div>

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { HeroSection } from '@/components/home/HeroSection';
 import { ServicesGallery } from '@/components/home/ServicesGallery';
 import { ComparisonSection } from '@/components/home/ComparisonSection';
@@ -8,6 +8,7 @@ import { CitySection } from '@/components/home/CitySection';
 import { SEOSection } from '@/components/home/SEOSection';
 import { ProcessSection } from '@/components/home/ProcessSection';
 import { ContactCTA } from '@/components/home/ContactCTA';
+import { PromotionalBanner, promoBanners } from '@/components/ui/PromotionalBanner';
 
 export const metadata: Metadata = {
   title: 'شركة القمة الفريدة | خدمات تنظيف احترافية في جميع مدن السعودية',
@@ -126,12 +127,16 @@ export default function Home() {
       {/* Mega Home Page */}
       <HeroSection />
       <ServicesGallery />
-       <WhyUsSection />
-       <ProcessSection />
-        <CitySection />
+      <PromotionalBanner {...promoBanners[0]} />
+      <WhyUsSection />
+      <ProcessSection />
+      <PromotionalBanner {...promoBanners[1]} />
+      <CitySection />
       <ComparisonSection />  
+      <PromotionalBanner {...promoBanners[2]} />
       <ArticlesSection />
       <SEOSection />
+      <PromotionalBanner {...promoBanners[3]} />
       <ContactCTA />
     </>
   );

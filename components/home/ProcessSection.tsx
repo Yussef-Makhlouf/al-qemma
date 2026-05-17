@@ -32,14 +32,8 @@ const processes = [
     title: 'فحص الجودة',
     desc: 'مشرف الجودة يتفقد كل تفصيل قبل المغادرة مستخدماً قائمة مراجعة تفصيلية، ولا يُغادر إلا بعد موافقتك.',
     color: 'bg-[#22c55e]',
-  },
-  {
-    step: '٥',
-    icon: Handshake,
-    title: 'الضمان والمتابعة',
-    desc: 'ضمان ٤٨ ساعة — نعود مجاناً إن احتجت أي تعديل، لضمان رضاك التام بنسبة ١٠٠٪ وبدون أي شروط.',
-    color: 'bg-[#f59e0b]',
-  },
+  }
+
 ];
 
 function ProcessCard({ proc, idx }: { proc: typeof processes[0]; idx: number }) {

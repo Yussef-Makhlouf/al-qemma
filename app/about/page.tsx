@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Target, Eye, Star, BadgeCheck, ShieldCheck, Users, ArrowRight, Building2, Sparkles, Building, Briefcase, CheckCircle2 } from 'lucide-react';
 import { ContactCTA } from '@/components/home/ContactCTA';
+import { PromotionalBanner, promoBanners } from '@/components/ui/PromotionalBanner';
 
 export const metadata: Metadata = {
   title: 'من نحن | القمة — رواد النظافة الاحترافية في السعودية',
@@ -85,6 +86,8 @@ export default function AboutPage() {
           </div>
       </section>
 
+      <PromotionalBanner {...promoBanners[0]} />
+
       {/* Mission, Vision, Values */}
       <section className="py-16 sm:py-24 bg-[#F4F7FF] relative border-y border-[#E8EEF9]">
          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -119,6 +122,8 @@ export default function AboutPage() {
             </div>
          </div>
       </section>
+
+      <PromotionalBanner {...promoBanners[1]} />
 
       {/* The Al-Qemma Standard - SEO Rich Section */}
       <section className="py-24 sm:py-32 bg-white relative overflow-hidden">
@@ -212,6 +217,8 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <PromotionalBanner {...promoBanners[2]} />
+
       {/* Geographic Reach & Impact */}
       <section className="relative py-24 sm:py-32 overflow-hidden flex items-center justify-center min-h-[70vh]">
         <div className="absolute inset-0">
@@ -277,6 +284,8 @@ export default function AboutPage() {
             ))}
          </div>
       </section>
+
+      <PromotionalBanner {...promoBanners[3]} />
 
       {/* Shared Contact CTA Component */}
       <ContactCTA />

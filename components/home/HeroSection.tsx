@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const trustBadges = [
   { icon: BadgeCheck, text: 'معتمدون رسمياً' },
-    { icon: Clock, text: 'خدمة ٧ أيام' },
+  { icon: Clock, text: 'خدمة ٧ أيام' },
 ];
 
 export function HeroSection() {
@@ -50,7 +50,7 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-28 pb-16 flex flex-col items-center text-center">
-        
+
         {/* Eyebrow */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
