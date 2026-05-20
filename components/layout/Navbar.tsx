@@ -85,7 +85,7 @@ export function Navbar() {
         {/* CTA Button */}
         <div className="hidden lg:block relative z-50">
           <a
-            href="tel:+966500000000"
+            href="tel:0545359694"
             aria-label="اتصل بنا الآن"
             className={`flex items-center gap-2 font-bold px-6 py-2.5 rounded-full transition-all shimmer-btn shadow-md hover:-translate-y-0.5 ${
               isDarkText
@@ -138,14 +138,14 @@ export function Navbar() {
               ))}
               <div className="mt-4 pt-4 border-t border-[#E8EEF9] flex flex-col gap-3">
                 <a
-                  href="tel:+966500000000"
+                  href="tel:0545359694"
                   className="flex items-center justify-center gap-2 bg-primary text-white font-bold px-6 py-3.5 rounded-full text-base"
                 >
                   <Phone className="w-5 h-5 rtl-flip" aria-hidden="true" />
                   اتصل الآن
                 </a>
                 <a
-                  href="https://wa.me/966500000000"
+                  href="https://wa.me/966545359694"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold px-6 py-3.5 rounded-full text-base"

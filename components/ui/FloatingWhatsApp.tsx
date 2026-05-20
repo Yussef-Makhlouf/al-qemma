@@ -5,7 +5,7 @@ import { motion } from 'motion/react';
 export function FloatingWhatsApp() {
   return (
     <motion.a
-      href="https://wa.me/966500000000?text=مرحباً، أريد الاستفسار عن خدمات القمة"
+      href="https://wa.me/966545359694?text=مرحباً، أريد الاستفسار عن خدمات القمة"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="تواصل معنا عبر واتساب"

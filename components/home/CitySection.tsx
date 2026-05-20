@@ -5,99 +5,37 @@ import { MapPin, Building2, Map, Compass, Navigation, Star, Phone } from 'lucide
 
 const regions = [
   {
-    id: 'riyadh',
-    city: 'منطقة الرياض',
-    title: 'تغطية شاملة للعاصمة الرياض',
-    description: 'نفخر في شركة القمة بتقديم خدمات تنظيف منازل وفلل متكاملة تغطي كافة أحياء العاصمة، مع فرق مجهزة وسيارات متنقلة لضمان أسرع استجابة لتلبية احتياجاتك.',
+    id: 'dammam',
+    city: 'الدمام',
+    title: 'خدمات التنظيف الاحترافية في الدمام',
+    description: 'نقدم خدمات نظافة متكاملة للمنازل والفلل والمكاتب داخل الدمام، مع فرق مدربة ومعدات متخصصة لاستجابة سريعة وجودة عالية.',
     districts: [
-      { area: 'أحياء شمال الرياض', names: 'الملقا، الياسمين، النرجس، حطين، الصحافة، العقيق، الندى' },
-      { area: 'أحياء شرق الرياض', names: 'القرطبي، اليرموك، المونسية، غرناطة، إشبيلية' },
-      { area: 'أحياء وسط وجنوب الرياض', names: 'العليا، السليمانية، المربع، الشفا، الحزم، العزيزية' },
+      { area: 'أحياء الدمام الرئيسية', names: 'الفيصلية، الشاطئ، الحزام الذهبي، العقربية، العليا، الخزامى' },
+      { area: 'خدمات متخصصة في الدمام', names: 'غسيل كنب، تنظيف سجاد، تنظيف خزانات، تعقيم، تنظيف بعد التشطيب' },
     ],
     colSpan: 'col-span-1 md:col-span-2 lg:col-span-2',
-    icon: Building2,
-    gradient: 'from-blue-500/10 via-transparent to-transparent',
-    color: 'text-blue-600',
-    bgIconColor: 'text-blue-500/5',
-  },
-  {
-    id: 'makkah',
-    city: 'منطقة مكة المكرمة',
-    title: 'جدة، مكة، والطائف',
-    description: 'تغطية متميزة في عروس البحر الأحمر والعاصمة المقدسة لتقديم خدمات تعقيم وتنظيف بأعلى المعايير.',
-    districts: [
-      { area: 'أحياء جدة الفاخرة', names: 'الشاطئ، أبحر، المحمدية، المرجان، البساتين، الخالدية، الروضة' },
-      { area: 'مكة المكرمة والطائف', names: 'العوالي، الشوقية، بطحاء قريش، شهار، الحوية' },
-    ],
-    colSpan: 'col-span-1 md:col-span-1 lg:col-span-1',
-    icon: Navigation,
-    gradient: 'from-amber-500/10 via-transparent to-transparent',
-    color: 'text-amber-600',
-    bgIconColor: 'text-amber-500/5',
-  },
-  {
-    id: 'eastern',
-    city: 'المنطقة الشرقية',
-    title: 'الدمام، الخبر، والظهران',
-    description: 'مستوى عالٍ من الاحترافية لعملائنا في مدن المنطقة الشرقية. خدمات شاملة وموثوقة للمنازل والشركات.',
-    districts: [
-      { area: 'الدمام والخبر', names: 'الفيصلية، الشاطئ، الحزام الذهبي، العقربية، العليا' },
-      { area: 'الظهران والجبيل', names: 'الدوحة، الدانة، القصور، الفناتير' },
-    ],
-    colSpan: 'col-span-1 md:col-span-1 lg:col-span-1',
-    icon: Map,
+    icon: MapPin,
     gradient: 'from-emerald-500/10 via-transparent to-transparent',
     color: 'text-emerald-600',
     bgIconColor: 'text-emerald-500/5',
   },
-  {
-    id: 'madinah',
-    city: 'توسع مستمر',
-    title: 'المدينة المنورة والسعوديه',
-    description: 'نلتزم بالوصول إلى عملائنا في مختلف المناطق للحفاظ على بيئة صحية ونظيفة، مسخرين أحدث التقنيات وأفضل الكوادر لضمان راحتكم.',
-    districts: [
-      { area: 'المدينة المنورة', names: 'العزيزية، الملك فهد، شوران، باقدو' },
-      { area: 'منطقة السعوديه', names: 'بريدة، عنيزة، الرس، البكيرية' },
-    ],
-    colSpan: 'col-span-1 md:col-span-2 lg:col-span-2',
-    icon: Compass,
-    gradient: 'from-primary/10 via-transparent to-transparent',
-    color: 'text-primary',
-    bgIconColor: 'text-primary/5',
-  }
 ];
 
 const seoKeywords = [
-  'شركة تنظيف منازل بالرياض',
-  'أفضل شركة تنظيف بجدة',
+  'شركة تنظيف الدمام',
+  'تنظيف منازل الدمام',
+  'تنظيف فلل الدمام',
+  'غسيل كنب الدمام',
+  'تنظيف سجاد الدمام',
+  'تنظيف خزانات الدمام',
+  'تعقيم الدمام',
+  'تنظيف مكاتب الدمام',
   'شركة نظافة عامة بالدمام',
-  'تعقيم شقق بمكة المكرمة',
-  'غسيل مجالس بالمدينة المنورة',
-  'تنظيف كنب بالخبر',
-  'شركة تنظيف بالسعوديه',
-  'نظافة فلل بالطائف',
-  'تنظيف واجهات زجاجية بالرياض',
-  'شركة تنظيف مسابح بجدة',
   'جلي رخام بالدمام',
-  'مكافحة حشرات بالرياض',
-  'تنظيف سجاد بالرياض',
   'تنظيف كنب بالدمام',
-  'تنظيف منازل بالرياض',
-  'تنظيف فلل بالرياض',
-  'تنظيف شقق بالرياض',
-  'تنظيف خزانات بالرياض',
-  'تنظيف مسابح بالرياض',
-  'تنظيف مكيفات بالرياض',
-  'تنظيف واجهات بالرياض',
-  'تنظيف سجاد بالرياض',
-  'تنظيف كنب بالرياض',
-  'تنظيف منازل بالرياض',
-  'تنظيف فلل بالرياض',
-  'تنظيف شقق بالرياض',
-  'تنظيف خزانات بالرياض',
-  'تنظيف مسابح بالرياض',
-  'تنظيف مكيفات بالرياض',
-  'تنظيف واجهات بالرياض',
+  'تنظيف منازل بالدمام',
+  'تنظيف فلل بالدمام',
+  'تنظيف شقق بالدمام',
 ];
 
 export function CitySection() {
@@ -121,7 +59,7 @@ export function CitySection() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 text-primary text-sm font-bold mb-6 border border-primary/10 shadow-sm"
           >
             <MapPin className="w-4 h-4" aria-hidden="true" />
-            تغطية شاملة للمملكة
+            تغطية شاملة للدمام
           </motion.div>
           <motion.h2
             id="city-title"
@@ -130,7 +68,7 @@ export function CitySection() {
             viewport={{ once: true, margin: '-80px' }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-[1.3]"
           >
-            نصلك أينما كنت في <span className="text-primary">أهم مدن وأحياء</span> المملكة
+            خدمات النظافة الاحترافية في <span className="text-primary">الدمام</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -139,7 +77,16 @@ export function CitySection() {
             transition={{ delay: 0.1 }}
             className="text-slate-600 text-lg leading-relaxed"
           >
-            نفخر في شركة القمة بتقديم خدمات النظافة المتكاملة عبر شبكة واسعة تغطي أهم المدن، مع التركيز على تلبية احتياجاتك في أسرع وقت وبأعلى مستويات الجودة والاحترافية.
+            نقدم خدمات تنظيف متكاملة في الدمام للمنزل والشركة، مع استجابة سريعة وفرق مدربة للحفاظ على مكانك نظيفا وصحياً.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-80px' }}
+            transition={{ delay: 0.2 }}
+            className="text-slate-600 text-lg leading-relaxed mt-6"
+          >
+            نفخر في شركة القمة بتقديم خدمات النظافة المتكاملة داخل الدمام، مع التركيز على تلبية احتياجاتك بسرعة ومهنية عالية.
           </motion.p>
         </div>
 
@@ -228,11 +175,11 @@ export function CitySection() {
           className="mt-16 text-center"
         >
           <p className="text-slate-600 mb-6 font-medium text-lg">
-            لم تجد حيك أو مدينتك في القائمة؟ نحن نتوسع باستمرار!
+            خدماتنا متوفرة حالياً في الدمام بالكامل، ونضمن لك سرعة الاستجابة والجودة في كل زيارة.
           </p>
           <a
-            href="tel:+966579796006"
-            aria-label="اتصل لمعرفة التوافر في منطقتك"
+            href="tel:0545359694"
+            aria-label="اتصل لطلب خدمة التنظيف في الدمام"
             className="inline-flex items-center gap-3 bg-primary hover:bg-primary/90 text-white font-bold px-8 py-4 rounded-full transition-all shadow-lg shadow-primary/20 hover:-translate-y-1 group"
           >
             <Phone className="w-5 h-5 rtl-flip group-hover:scale-110 transition-transform" aria-hidden="true" />

@@ -17,7 +17,7 @@ export const promoBanners: PromotionalBannerProps[] = [
     description: 'احصل على بيئة نظيفة وصحية لعائلتك. نقدم أفضل خدمات النظافة بأسعار تنافسية تلبي احتياجاتك.',
     image: '/company-clean.png',
     action: 'whatsapp',
-    link: 'https://wa.me/966579796006',
+    link: 'https://wa.me/966545359694',
     cta: 'تواصل واتساب'
   },
   {
@@ -25,7 +25,7 @@ export const promoBanners: PromotionalBannerProps[] = [
     description: 'تنظيف عميق للمطابخ وإزالة أصعب الدهون بأحدث الأجهزة والمواد الفعالة لضمان مطبخ مشرق ونظيف.',
     image: '/kitchen-clean.png',
     action: 'call',
-    link: 'tel:+966579796006',
+    link: 'tel:0545359694',
     cta: 'اتصل بنا الآن'
   },
   {
@@ -33,7 +33,7 @@ export const promoBanners: PromotionalBannerProps[] = [
     description: 'فريق عمل مدرب ومجهز بأحدث المعدات لضمان أعلى مستويات النظافة والتعقيم لكل زاوية في منزلك.',
     image: '/service1.png',
     action: 'whatsapp',
-    link: 'https://wa.me/966579796006',
+    link: 'https://wa.me/966545359694',
     cta: 'احجز خدمتك'
   },
   {
@@ -41,7 +41,7 @@ export const promoBanners: PromotionalBannerProps[] = [
     description: 'خبرة طويلة في تنظيف المساحات الكبيرة وتلميع الواجهات والرخام بدقة عالية لتظهر الفيلا بأفضل حلة.',
     image: '/clean-villa.png',
     action: 'call',
-    link: 'tel:+966579796006',
+    link: 'tel:0545359694',
     cta: 'اطلب استشارة'
   }
 ];

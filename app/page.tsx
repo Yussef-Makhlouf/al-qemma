@@ -11,9 +11,9 @@ import { ContactCTA } from '@/components/home/ContactCTA';
 import { PromotionalBanner, promoBanners } from '@/components/ui/PromotionalBanner';
 
 export const metadata: Metadata = {
-  title: 'شركة القمة الفريدة | خدمات تنظيف احترافية في جميع مدن السعودية',
+  title: 'شركة القمة الفريدة | خدمات تنظيف احترافية في الدمام',
   description:
-    'القمة الفريدة — الشركة الرائدة في خدمات التنظيف الاحترافية في المملكة العربية السعودية. تنظيف منازل وفلل وشقق، كنب وسجاد، مطابخ وحمامات، تعقيم وتنظيف عميق. نخدم الرياض وجدة والدمام والقصيم وجميع مدن المملكة. اتصل: 0579796006.',
+    'القمة الفريدة — الشركة الرائدة في خدمات التنظيف الاحترافية في الدمام. تنظيف منازل وفلل وشقق، كنب وسجاد، مطابخ وحمامات، تعقيم وتنظيف عميق. نخدم الدمام بأعلى مستوى وأسرع استجابة. اتصل: 0545359694.',
   alternates: {
     canonical: 'https://al-qemma.com',
   },
@@ -28,29 +28,20 @@ const jsonLd = {
       name: 'القمة الفريدة',
       alternateName: 'Al-Qemma Unique Cleaning',
       description:
-        'شركة متخصصة في خدمات النظافة الاحترافية للمنازل والفلل والمكاتب في جميع مدن المملكة العربية السعودية',
+        'شركة متخصصة في خدمات النظافة الاحترافية للمنازل والفلل والمكاتب في الدمام',
       url: 'https://al-qemma.com',
-      telephone: '+966579796006',
+      telephone: '0545359694',
       logo: 'https://al-qemma.com/logo.png',
       image: 'https://al-qemma.com/og-image.jpg',
       address: {
         '@type': 'PostalAddress',
         addressCountry: 'SA',
-        addressRegion: 'الرياض',
-        addressLocality: 'الرياض',
-        streetAddress: 'المملكة العربية السعودية'
+        addressRegion: 'المنطقة الشرقية',
+        addressLocality: 'الدمام',
+        streetAddress: 'الدمام، المملكة العربية السعودية'
       },
       areaServed: [
-        { '@type': 'City', name: 'الرياض' },
-        { '@type': 'City', name: 'جدة' },
         { '@type': 'City', name: 'الدمام' },
-        { '@type': 'City', name: 'مكة المكرمة' },
-        { '@type': 'City', name: 'المدينة المنورة' },
-        { '@type': 'City', name: 'بريدة' },
-        { '@type': 'City', name: 'عنيزة' },
-        { '@type': 'City', name: 'الرس' },
-        { '@type': 'City', name: 'البكيرية' },
-        { '@type': 'City', name: 'عيون الجواء' },
       ],
       openingHoursSpecification: [
         {
@@ -70,14 +61,14 @@ const jsonLd = {
       priceRange: '$$',
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
-        name: 'خدمات النظافة في الرياض',
+        name: 'خدمات النظافة في الدمام',
         itemListElement: [
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف المنازل في الرياض' } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف الفلل في الرياض' } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف الشقق في الرياض' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف المنازل في الدمام' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف الفلل في الدمام' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف الشقق في الدمام' } },
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف السجاد بالبخار' } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف الكنب في الرياض' } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف المجالس في الرياض' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف الكنب في الدمام' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف المجالس في الدمام' } },
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف الموكيت بالبخار' } },
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف المطابخ' } },
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف الحمامات وتعقيمها' } },

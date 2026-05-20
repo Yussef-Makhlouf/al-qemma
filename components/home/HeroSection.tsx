@@ -23,7 +23,7 @@ export function HeroSection() {
           fill
           className="object-cover object-center"
           priority
-          quality={85}
+         
         />
         {/* Gradient overlays for depth and readability */}
         <div className="absolute inset-0 bg-[#0D1B35]/70" />
@@ -98,7 +98,7 @@ export function HeroSection() {
           className="flex flex-col sm:flex-row gap-5 mb-14 w-full sm:w-auto"
         >
           <a
-            href="tel:+966579796006"
+            href="tel:0545359694"
             aria-label="اتصل بنا الآن"
             className="group flex items-center justify-center gap-3 bg-primary text-white font-bold px-10 py-4 sm:py-5 rounded-full transition-all duration-300 shimmer-btn shadow-[0_0_40px_rgba(34,111,180,0.4)] hover:bg-primary-mid hover:-translate-y-1 hover:shadow-[0_0_60px_rgba(34,111,180,0.6)] focus:ring-4 focus:ring-primary/30 outline-none"
           >

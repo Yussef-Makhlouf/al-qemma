@@ -103,20 +103,7 @@ const services = [
     className: 'md:col-span-2 lg:col-span-2',
     large: false,
   },
-  {
-    id: 8,
-    title: 'غسيل وصيانة المكيفات',
-    desc: 'هواء نقي وبارد بدون روائح أو حساسية. نغسل المكيفات بالكامل في مكانها بأحدث مضخات المياه مع حماية كاملة لأثاثك.',
-    icon: Fan,
-    benefits: ['غسيل بالضغط', 'إزالة الفطريات', 'تبريد أعلى'],
-    color: 'from-[#14B8A6] to-[#2DD4BF]',
-    lightColor: 'bg-teal-50',
-    iconColor: 'text-teal-600',
-    badgeColor: 'bg-teal-50 text-teal-700',
-    tag: 'تنفس صحي',
-    className: 'md:col-span-2 lg:col-span-2',
-    large: false,
-  },
+
   {
     id: 9,
     title: 'تنظيف الزجاج والمكاتب',
@@ -143,7 +130,7 @@ const services = [
     badgeColor: 'bg-amber-50 text-amber-700',
     tag: 'واجهات',
     className: 'md:col-span-1 lg:col-span-2',
-    large: false,
+    large: true,
   },
 ];
 
@@ -168,13 +155,13 @@ export function ServicesGallery() {
           <div>
             <div className="section-eyebrow mb-3">
               <Sparkles className="w-3 h-3" aria-hidden="true" />
-              خدماتنا في جميع انحاء المملكه العربيه السعوديه
+              خدماتنا في الدمام
             </div>
             <h2 id="services-gallery-title" className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0D1B35] mb-3">
-              ١٦ خدمة تنظيف في المملكه العربيه السعوديه
+              ١٦ خدمة تنظيف في الدمام
             </h2>
             <p className="text-[#4A5568] text-base sm:text-lg max-w-xl font-light leading-relaxed">
-              من تنظيف المنازل والفلل، لغسيل الكنب والسجاد، للتعقيم الكامل — فريقنا جاهز لكل طلب في جميع انحاء المملكه العربيه السعوديه.
+              من تنظيف المنازل والفلل، لغسيل الكنب والسجاد، للتعقيم الكامل — فريقنا جاهز لكل طلب داخل الدمام.
             </p>
           </div>
           <Link

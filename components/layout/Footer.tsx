@@ -35,7 +35,7 @@ export function Footer() {
             </p>
             
             <div className="flex flex-col gap-4 w-full sm:max-w-md">
-              <a href="tel:+966500000000" className="flex items-center gap-4 text-white hover:text-gold transition-colors p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-gold/30 w-full group">
+              <a href="tel:0545359694" className="flex items-center gap-4 text-white hover:text-gold transition-colors p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-gold/30 w-full group">
                 <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center group-hover:bg-gold/20 transition-colors">
                    <Phone className="w-5 h-5 text-gold rtl-flip" />
                 </div>

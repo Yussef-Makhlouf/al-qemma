@@ -51,7 +51,7 @@ export function ContactCTA() {
               <div className="flex flex-col gap-4">
                 {/* Phone CTA */}
                 <motion.a
-                  href="tel:+966500000000"
+                  href="tel:0545359694"
                   aria-label="اتصل بنا الآن على الهاتف"
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
@@ -69,7 +69,7 @@ export function ContactCTA() {
 
                 {/* WhatsApp CTA */}
                 <motion.a
-                  href="https://wa.me/966500000000?text=مرحباً، أريد الاستفسار عن خدمات القمة"
+                  href="https://wa.me/966545359694?text=مرحباً، أريد الاستفسار عن خدمات القمة"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="راسلنا على واتساب"

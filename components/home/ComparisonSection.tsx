@@ -187,7 +187,7 @@ export function ComparisonSection() {
                   * تستند المقارنة إلى معايير صناعية ومعايير شركة القمة الموثقة.
                 </p>
                 <a
-                  href="tel:+966500000000"
+                  href="tel:0545359694"
                   className="btn-primary text-sm px-6 py-2.5 whitespace-nowrap"
                 >
                   احجز الآن مجاناً
