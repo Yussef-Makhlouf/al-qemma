@@ -44,7 +44,7 @@ export function ContactCTA() {
                 <p className="text-white/70 text-base sm:text-lg font-light leading-relaxed mb-8 max-w-xl">
                   لا نماذج معقدة، لا انتظار طويل. اتصل مباشرة وسيرد عليك أحد مسؤولينا فوراً. فريقنا جاهز من الساعة السابعة صباحاً حتى العاشرة مساءً طوال أيام الأسبوع.
                 </p>
-           
+
               </div>
 
               {/* Right: CTA Cards */}
@@ -63,7 +63,7 @@ export function ContactCTA() {
                   <div>
                     <div className="text-white/80 text-xs font-semibold mb-1 uppercase tracking-wider">اتصل مباشرة</div>
                     <div className="text-xl sm:text-2xl font-bold">اتصل بنا الآن</div>
-                    <div className="text-white/70 font-mono text-sm mt-0.5" dir="ltr">+966 50 000 0000</div>
+                    <div className="text-white/70 font-mono text-sm mt-0.5" dir="ltr">+966 54 535 9694</div>
                   </div>
                 </motion.a>
 
@@ -90,7 +90,7 @@ export function ContactCTA() {
 
                 {/* Guarantee note */}
                 <div className="text-center text-white/50 text-xs font-light">
-                  ✓ معاينة مجانية &nbsp;·&nbsp; ✓ عرض سعر فوري &nbsp;·&nbsp; 
+                  ✓ معاينة مجانية &nbsp;·&nbsp; ✓ عرض سعر فوري &nbsp;·&nbsp;
                 </div>
               </div>
             </div>

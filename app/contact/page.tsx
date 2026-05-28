@@ -55,7 +55,7 @@ export default function ContactPage() {
                         <Phone className="w-8 h-8 text-primary group-hover:text-white rtl-flip transition-colors" aria-hidden="true" />
                      </div>
                      <h3 className="text-xl font-bold text-[#0D1B35] mb-2">رقم الهاتف</h3>
-                     <a href="tel:0545359694" className="text-primary font-mono font-bold text-lg hover:underline mb-2" dir="ltr">+966 50 000 0000</a>
+                     <a href="tel:0545359694" className="text-primary font-mono font-bold text-lg hover:underline mb-2" dir="ltr">+966 54 535 9694</a>
                      <p className="text-[#4A5568] text-sm">متوفر طوال أيام الأسبوع</p>
                   </div>
 

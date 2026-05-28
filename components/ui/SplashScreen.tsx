@@ -42,7 +42,7 @@ export function SplashScreen() {
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                  >
                     <Image 
-                      src="/logo.png" 
+                      src="/icon.png" 
                       alt="القمة الفريدة" 
                       width={220} 
                       height={90} 
