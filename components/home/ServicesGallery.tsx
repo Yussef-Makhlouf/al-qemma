@@ -121,7 +121,7 @@ const services = [
   {
     id: 10,
     title: 'تنظيف واجهات المباني',
-    desc: 'واجهة المبنى تعكس صورة المكان. فريق متخصص يستخدم معدات السلامة لتنظيف الواجهات الزجاجية والحجرية بدقة.',  
+    desc: 'واجهة المبنى تعكس صورة المكان. فريق متخصص يستخدم معدات السلامة لتنظيف الواجهات الزجاجية والحجرية بدقة.',
     icon: Building,
     benefits: ['معدات سلامة', 'واجهات زجاجية', 'إزالة بقع'],
     color: 'from-[#F59E0B] to-[#FBBF24]',
@@ -155,13 +155,13 @@ export function ServicesGallery() {
           <div>
             <div className="section-eyebrow mb-3">
               <Sparkles className="w-3 h-3" aria-hidden="true" />
-              خدماتنا في الدمام
+              خدماتنا في الخبر
             </div>
             <h2 id="services-gallery-title" className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0D1B35] mb-3">
-              ١٦ خدمة تنظيف في الدمام
+              ١٦ خدمة تنظيف في الخبر
             </h2>
             <p className="text-[#4A5568] text-base sm:text-lg max-w-xl font-light leading-relaxed">
-              من تنظيف المنازل والفلل، لغسيل الكنب والسجاد، للتعقيم الكامل — فريقنا جاهز لكل طلب داخل الدمام.
+              من تنظيف المنازل والفلل، لغسيل الكنب والسجاد، للتعقيم الكامل — فريقنا جاهز لكل طلب داخل الخبر.
             </p>
           </div>
           <Link

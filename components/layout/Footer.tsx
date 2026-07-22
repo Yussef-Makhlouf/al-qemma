@@ -81,7 +81,7 @@ export function Footer() {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-[11px] text-white/50 uppercase tracking-wider mb-0.5">اتصال مباشر مجاني</span>
-                  <span className="font-mono text-lg font-bold" dir="ltr">+966 54 535 9694</span>
+                  <span className="font-mono text-lg font-bold" dir="ltr">+966545359694</span>
                 </div>
                 <ArrowLeft className="w-5 h-5 text-gold opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all mr-auto rtl-flip" />
               </a>

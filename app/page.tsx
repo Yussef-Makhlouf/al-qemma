@@ -11,9 +11,9 @@ import { ContactCTA } from '@/components/home/ContactCTA';
 import { PromotionalBanner, promoBanners } from '@/components/ui/PromotionalBanner';
 
 export const metadata: Metadata = {
-  title: 'شركة القمة الفريدة | خدمات تنظيف احترافية في الدمام',
+  title: 'شركة القمة الفريدة | خدمات تنظيف احترافية في الخبر',
   description:
-    'القمة الفريدة — الشركة الرائدة في خدمات التنظيف الاحترافية في الدمام. تنظيف منازل وفلل وشقق، كنب وسجاد، مطابخ وحمامات، تعقيم وتنظيف عميق. نخدم الدمام بأعلى مستوى وأسرع استجابة. اتصل: 0545359694.',
+    'القمة الفريدة — الشركة الرائدة في خدمات التنظيف الاحترافية في الخبر. تنظيف منازل وفلل وشقق، كنب وسجاد، مطابخ وحمامات، تعقيم وتنظيف عميق. نخدم الخبر بأعلى مستوى وأسرع استجابة. اتصل: 0545359694.',
   alternates: {
     canonical: 'https://al-qemma.com',
   },
@@ -28,7 +28,7 @@ const jsonLd = {
       name: 'القمة الفريدة',
       alternateName: 'Al-Qemma Unique Cleaning',
       description:
-        'شركة متخصصة في خدمات النظافة الاحترافية للمنازل والفلل والمكاتب في الدمام',
+        'شركة متخصصة في خدمات النظافة الاحترافية للمنازل والفلل والمكاتب في الخبر',
       url: 'https://al-qemma.com',
       telephone: '0545359694',
       logo: 'https://al-qemma.com/logo.png',
@@ -37,11 +37,11 @@ const jsonLd = {
         '@type': 'PostalAddress',
         addressCountry: 'SA',
         addressRegion: 'المنطقة الشرقية',
-        addressLocality: 'الدمام',
-        streetAddress: 'الدمام، المملكة العربية السعودية'
+        addressLocality: 'الخبر',
+        streetAddress: 'الخبر، المملكة العربية السعودية'
       },
       areaServed: [
-        { '@type': 'City', name: 'الدمام' },
+        { '@type': 'City', name: 'الخبر' },
       ],
       openingHoursSpecification: [
         {
@@ -61,14 +61,14 @@ const jsonLd = {
       priceRange: '$$',
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
-        name: 'خدمات النظافة في الدمام',
+        name: 'خدمات النظافة في الخبر',
         itemListElement: [
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف المنازل في الدمام' } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف الفلل في الدمام' } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف الشقق في الدمام' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف المنازل في الخبر' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف الفلل في الخبر' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف الشقق في الخبر' } },
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف السجاد بالبخار' } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف الكنب في الدمام' } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف المجالس في الدمام' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف الكنب في الخبر' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف المجالس في الخبر' } },
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف الموكيت بالبخار' } },
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف المطابخ' } },
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'تنظيف الحمامات وتعقيمها' } },
@@ -123,7 +123,7 @@ export default function Home() {
       <ProcessSection />
       <PromotionalBanner {...promoBanners[1]} />
       <CitySection />
-      <ComparisonSection />  
+      <ComparisonSection />
       <PromotionalBanner {...promoBanners[2]} />
       <ArticlesSection />
       <SEOSection />

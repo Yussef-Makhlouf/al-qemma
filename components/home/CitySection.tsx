@@ -5,13 +5,13 @@ import { MapPin, Building2, Map, Compass, Navigation, Star, Phone } from 'lucide
 
 const regions = [
   {
-    id: 'dammam',
-    city: 'الدمام',
-    title: 'خدمات التنظيف الاحترافية في الدمام',
-    description: 'نقدم خدمات نظافة متكاملة للمنازل والفلل والمكاتب داخل الدمام، مع فرق مدربة ومعدات متخصصة لاستجابة سريعة وجودة عالية.',
+    id: 'khobar',
+    city: 'الخبر',
+    title: 'خدمات التنظيف الاحترافية في الخبر',
+    description: 'نقدم خدمات نظافة متكاملة للمنازل والفلل والمكاتب داخل الخبر، مع فرق مدربة ومعدات متخصصة لاستجابة سريعة وجودة عالية.',
     districts: [
-      { area: 'أحياء الدمام الرئيسية', names: 'الفيصلية، الشاطئ، الحزام الذهبي، العقربية، العليا، الخزامى' },
-      { area: 'خدمات متخصصة في الدمام', names: 'غسيل كنب، تنظيف سجاد، تنظيف خزانات، تعقيم، تنظيف بعد التشطيب' },
+      { area: 'أحياء الخبر الرئيسية', names: 'الفيصلية، الشاطئ، الحزام الذهبي، العقربية، العليا، الخزامى' },
+      { area: 'خدمات متخصصة في الخبر', names: 'غسيل كنب، تنظيف سجاد، تنظيف خزانات، تعقيم، تنظيف بعد التشطيب' },
     ],
     colSpan: 'col-span-1 md:col-span-2 lg:col-span-2',
     icon: MapPin,
@@ -22,20 +22,20 @@ const regions = [
 ];
 
 const seoKeywords = [
-  'شركة تنظيف الدمام',
-  'تنظيف منازل الدمام',
-  'تنظيف فلل الدمام',
-  'غسيل كنب الدمام',
-  'تنظيف سجاد الدمام',
-  'تنظيف خزانات الدمام',
-  'تعقيم الدمام',
-  'تنظيف مكاتب الدمام',
-  'شركة نظافة عامة بالدمام',
-  'جلي رخام بالدمام',
-  'تنظيف كنب بالدمام',
-  'تنظيف منازل بالدمام',
-  'تنظيف فلل بالدمام',
-  'تنظيف شقق بالدمام',
+  'شركة تنظيف الخبر',
+  'تنظيف منازل الخبر',
+  'تنظيف فلل الخبر',
+  'غسيل كنب الخبر',
+  'تنظيف سجاد الخبر',
+  'تنظيف خزانات الخبر',
+  'تعقيم الخبر',
+  'تنظيف مكاتب الخبر',
+  'شركة نظافة عامة بالخبر',
+  'جلي رخام بالخبر',
+  'تنظيف كنب بالخبر',
+  'تنظيف منازل بالخبر',
+  'تنظيف فلل بالخبر',
+  'تنظيف شقق بالخبر',
 ];
 
 export function CitySection() {
@@ -68,7 +68,7 @@ export function CitySection() {
             viewport={{ once: true, margin: '-80px' }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-[1.3]"
           >
-            خدمات النظافة الاحترافية في <span className="text-primary">الدمام</span>
+            خدمات النظافة الاحترافية في <span className="text-primary">الخبر</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -77,7 +77,7 @@ export function CitySection() {
             transition={{ delay: 0.1 }}
             className="text-slate-600 text-lg leading-relaxed"
           >
-            نقدم خدمات تنظيف متكاملة في الدمام للمنزل والشركة، مع استجابة سريعة وفرق مدربة للحفاظ على مكانك نظيفا وصحياً.
+            نقدم خدمات تنظيف متكاملة في الخبر للمنزل والشركة، مع استجابة سريعة وفرق مدربة للحفاظ على مكانك نظيفا وصحياً.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -86,7 +86,7 @@ export function CitySection() {
             transition={{ delay: 0.2 }}
             className="text-slate-600 text-lg leading-relaxed mt-6"
           >
-            نفخر في شركة القمة بتقديم خدمات النظافة المتكاملة داخل الدمام، مع التركيز على تلبية احتياجاتك بسرعة ومهنية عالية.
+            نفخر في شركة القمة بتقديم خدمات النظافة المتكاملة داخل الخبر، مع التركيز على تلبية احتياجاتك بسرعة ومهنية عالية.
           </motion.p>
         </div>
 
@@ -175,11 +175,11 @@ export function CitySection() {
           className="mt-16 text-center"
         >
           <p className="text-slate-600 mb-6 font-medium text-lg">
-            خدماتنا متوفرة حالياً في الدمام بالكامل، ونضمن لك سرعة الاستجابة والجودة في كل زيارة.
+            خدماتنا متوفرة حالياً في الخبر بالكامل، ونضمن لك سرعة الاستجابة والجودة في كل زيارة.
           </p>
           <a
             href="tel:0545359694"
-            aria-label="اتصل لطلب خدمة التنظيف في الدمام"
+            aria-label="اتصل لطلب خدمة التنظيف في الخبر"
             className="inline-flex items-center gap-3 bg-primary hover:bg-primary/90 text-white font-bold px-8 py-4 rounded-full transition-all shadow-lg shadow-primary/20 hover:-translate-y-1 group"
           >
             <Phone className="w-5 h-5 rtl-flip group-hover:scale-110 transition-transform" aria-hidden="true" />

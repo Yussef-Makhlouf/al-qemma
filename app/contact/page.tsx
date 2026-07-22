@@ -3,8 +3,8 @@ import { Phone, MapPin, Clock, ArrowRight, Mail, Building2 } from 'lucide-react'
 import { ContactCTA } from '@/components/home/ContactCTA';
 
 export const metadata: Metadata = {
-   title: 'تواصل معنا | شركة القمة للنظافة الاحترافية — الدمام',
-   description: 'اتصل بشركة القمة للنظافة مباشرة أو تواصل عبر الواتساب لطلب الخدمة أو الاستفسار. فريقنا متاح يومياً لتلبية احتياجاتك في الدمام.',
+   title: 'تواصل معنا | شركة القمة للنظافة الاحترافية — الخبر',
+   description: 'اتصل بشركة القمة للنظافة مباشرة أو تواصل عبر الواتساب لطلب الخدمة أو الاستفسار. فريقنا متاح يومياً لتلبية احتياجاتك في الخبر.',
    alternates: {
       canonical: 'https://alqemma.sa/contact',
    },
@@ -33,7 +33,7 @@ export default function ContactPage() {
                   نحن هنا <span className="text-gold">لخدمتك</span>
                </h1>
                <p className="text-white/70 max-w-2xl mx-auto text-lg sm:text-xl font-light leading-relaxed">
-                  تواصل معنا اليوم لحجز خدمة التنظيف الخاصة بك أو للاستفسار عن عروضنا المخصصة للشركات والمنازل في الدمام.
+                  تواصل معنا اليوم لحجز خدمة التنظيف الخاصة بك أو للاستفسار عن عروضنا المخصصة للشركات والمنازل في الخبر.
                </p>
             </div>
          </section>
@@ -44,7 +44,7 @@ export default function ContactPage() {
                <div className="text-center mb-16">
                   <h2 className="text-3xl sm:text-4xl font-bold text-[#0D1B35] mb-6">قنوات الاتصال المباشرة</h2>
                   <p className="text-[#4A5568] max-w-3xl mx-auto text-base sm:text-lg font-light leading-relaxed">
-                     في شركة القمة، نُدرك أن وقتك ثمين. لذلك استغنينا عن النماذج المعقدة واستبدلناها بقنوات تواصل مباشرة تضمن لك رداً فورياً واستجابة لا تتجاوز ٣٠ دقيقة. إذا كنت في الدمام، فإن فريق خدمة العملاء لدينا مستعد لتقديم استشارات مجانية، تقييم مبدئي لمتطلبات النظافة الخاصة بك، وجدولة المواعيد بمرونة تامة.
+                     في شركة القمة، نُدرك أن وقتك ثمين. لذلك استغنينا عن النماذج المعقدة واستبدلناها بقنوات تواصل مباشرة تضمن لك رداً فورياً واستجابة لا تتجاوز ٣٠ دقيقة. إذا كنت في الخبر، فإن فريق خدمة العملاء لدينا مستعد لتقديم استشارات مجانية، تقييم مبدئي لمتطلبات النظافة الخاصة بك، وجدولة المواعيد بمرونة تامة.
                   </p>
                </div>
 
@@ -55,7 +55,7 @@ export default function ContactPage() {
                         <Phone className="w-8 h-8 text-primary group-hover:text-white rtl-flip transition-colors" aria-hidden="true" />
                      </div>
                      <h3 className="text-xl font-bold text-[#0D1B35] mb-2">رقم الهاتف</h3>
-                     <a href="tel:0545359694" className="text-primary font-mono font-bold text-lg hover:underline mb-2" dir="ltr">+966 54 535 9694</a>
+                     <a href="tel:0545359694" className="text-primary font-mono font-bold text-lg hover:underline mb-2" dir="ltr">+966545359694</a>
                      <p className="text-[#4A5568] text-sm">متوفر طوال أيام الأسبوع</p>
                   </div>
 
@@ -64,8 +64,8 @@ export default function ContactPage() {
                         <Building2 className="w-8 h-8 text-gold group-hover:text-white transition-colors" aria-hidden="true" />
                      </div>
                      <h3 className="text-xl font-bold text-[#0D1B35] mb-2">المقر الرئيسي</h3>
-                     <p className="text-[#0D1B35] font-bold text-lg mb-2">الدمام</p>
-                     <p className="text-[#4A5568] text-sm leading-relaxed">الدمام، المنطقة الشرقية<br />المملكة العربية السعودية</p>
+                     <p className="text-[#0D1B35] font-bold text-lg mb-2">الخبر</p>
+                     <p className="text-[#4A5568] text-sm leading-relaxed">الخبر، المنطقة الشرقية<br />المملكة العربية السعودية</p>
                   </div>
 
                   <div className="card-light p-8 flex flex-col items-center text-center group hover:-translate-y-2 transition-transform">
@@ -73,8 +73,8 @@ export default function ContactPage() {
                         <MapPin className="w-8 h-8 text-accent group-hover:text-white transition-colors" aria-hidden="true" />
                      </div>
                      <h3 className="text-xl font-bold text-[#0D1B35] mb-2">مناطق الخدمة</h3>
-                     <p className="text-[#0D1B35] font-bold text-lg mb-2">الدمام</p>
-                     <p className="text-[#4A5568] text-sm leading-relaxed">جميع أحياء الدمام وخدمات التنظيف المتخصصة داخل المدينة</p>
+                     <p className="text-[#0D1B35] font-bold text-lg mb-2">الخبر</p>
+                     <p className="text-[#4A5568] text-sm leading-relaxed">جميع أحياء الخبر وخدمات التنظيف المتخصصة داخل المدينة</p>
                   </div>
 
                   <div className="card-light p-8 flex flex-col items-center text-center group hover:-translate-y-2 transition-transform">
@@ -98,7 +98,7 @@ export default function ContactPage() {
             <div className="w-full max-w-7xl h-[400px] sm:h-[500px] rounded-[2rem] sm:rounded-[3rem] overflow-hidden shadow-2xl relative border border-[#E8EEF9]">
                <iframe
                   title="موقع شركة القمة للخدمات المتكاملة على خرائط جوجل"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.0184824479376!2d50.06597591545322!3d26.39235859384466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49f7dd70f2c50b%3A0xd60d905365aa6c82!2sDammam%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.838610529846!2d49.66458047596237!3d26.28947254578012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49e58c27d60c0d%3A0xf93ee82749211f5a!2sKhobar%2023752%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sae!4v1753312399105!5m2!1sen!2sae"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
